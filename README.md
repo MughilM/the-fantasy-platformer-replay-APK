@@ -13,6 +13,10 @@ Each file lists the week's games (kickoff and end times in UTC), every play's pe
 and a map from nflverse GSIS player IDs to Sleeper player IDs. The format is defined by `timeline.schema.json` in the
 app's repository (`schemaVersion` 1).
 
+`{season}/schedule.json` is the season's schedule: every game whose teams and kickoff are set, with its week, teams
+(Sleeper's codes), kickoff time (UTC), and whether it has finished. It's rebuilt on every run, so flexed games and new
+playoff matchups appear within days. The format is defined by `schedule.schema.json` (`schemaVersion` 1).
+
 ## Data and attribution
 
 Built from [nflverse](https://github.com/nflverse) play-by-play, schedule, and player ID data, licensed
